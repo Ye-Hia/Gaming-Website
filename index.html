@@ -3,19 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Don't Forget To Change -->
-    <title>Gaming Website</title>
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link 
-        href="https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap" rel="stylesheet"
-    >
-   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <!-- Font Awesome for icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-
-     <!-- Main Styling File -->
+    
+    <!-- Main Styling File -->
     <link rel="stylesheet" href="assets/css/style.css">
     <!-- Important To Use Font Awesome -->
     <link rel="stylesheet" href="assets/css/all.min.css">
@@ -23,62 +12,222 @@
     <link rel="stylesheet" href="assets/css/normalize.css">
     <!-- Main Styling The Icons -->
     <link rel="stylesheet" href="assets/css/icons.css">
-     
-    
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link 
+        href="https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap" rel="stylesheet"
+    >
+    <!-- Don't Forget To Change -->
+    <title>Core Dumb</title>
 </head>
 <body>
-      <div class="IW-features">
-        <div class="container">
-            <h2 class="IW-section-title">Why Choose Our Shop?</h2>
-            <div class="row g-4">
-                <!-- Best Prices - Updated Icon -->
-                <div class="col-lg-3 col-md-6">
-                    <div class="IW-item">
-                        <div class="IW-icon-container">
-                            <i class="fas fa-tags"></i>
-                        </div>
-                        <h4>Best Prices</h4>
-                        <p>Guaranteed lowest prices with automatic price matching and beat-by-5% policy</p>
+    <div class="header-container">
+        <header class="header" id="header">
+            <!-- Left Section -->
+             <div class="logo-container">
+                <a href="">
+                    <div class="logo-img" id="logo-img"><img src="" alt="logo"></div>
+                    <h1>Gaming Website</h1>
+                </a>
+             </div>
+            <!-- Center Section -->
+             <nav class="nav" aria-label="Main navigation" id="main-nav">
+                <ul class="links">
+                    <li>
+                        <a href="#header"><i class="fa-solid fa-house"></i>Home</a>
+                    </li>
+                    <li>
+                        <a href="shop.html"><i class="fa-solid fa-bag-shopping"></i>Shop</a>
+                    </li>
+                    <li>
+                        <a href="details.html"><i class="fa-brands fa-product-hunt"></i>Product Details</a>
+                    </li>
+                    <li>
+                        <a href="about.html">About Us</a>
+                    </li>
+                    <li>
+                        <a href="contact.html">Contact Us</a>
+                    </li>
+                </ul>
+             </nav>
+             <!-- Right Section -->
+             <form id="search" action="#">
+                <div class="search-box">
+                    <input class="search-input"type="text" name="" placeholder="Search">
+                    <button class="serach-btn"><i class="fa-brands fa-searchengin"></i></button>
+                </div>
+            </form>
+            <button class="login-btn"><i class="fa-solid fa-right-to-bracket"></i>Login</button>
+            <button class="sign-up-btn"><i class="fa-solid fa-user-plus"></i>Sign Up</button>
+        </header>
+    </div>
+    <main>
+        <section class="hero" id="hero" >
+            <!-- Main Banner -->
+            <div class="main-banner">
+                <!-- Right Side -->
+                <h4>Core Dump</h4>
+                <h2>Assassin's Creed</h2>
+                <p>is a historical action-adventure video game series and media franchise published by Ubisoft</p>
+                <!-- Left Side -->
+                <div class="banner-card-layout">
+                    <span class="price">$60</span>
+                    <span class="sale">-80%</span>
+                    <div class="img-banner">
+                        <img src="assets/img/game01.jpeg" alt="best-game" id="banner-game">
                     </div>
+                    <h3>Best Game of the Year</h3>
+                    <button class="play-btn game-btn">
+                        Play Free Demo
+                    </button>
+                </div>  
+            </div>
+            <!-- Game Perks -->
+             <div class="perks-layout">
+                <div class="perk">
+                    <i class="fa-solid fa-gamepad"></i>
+                    Controller Mode
+                </div>
+                <div class="perk">
+                    <i class="fa-regular fa-map"></i>
+                    Story Game
+                </div>
+                <div class="perk">
+                    <i class="fa-regular fa-compass"></i>
+                    Open World
+                </div>
+                <div class="perk">
+                    <i class="fa-solid fa-fire"></i>
+                    Discover Mystries
+                </div>
+                <div class="perk">
+                    <i class="fa-solid fa-person-hiking"></i>
+                </div>
+                <div class="perk">
+                    <i class="fa-solid fa-tent"></i>
+                </div>
+                <div class="perk">
+                    <i class="fa-solid fa-fire-flame-curved"></i>
+                </div>
+             </div>
+        </section>
+        <section class="online-games">
+            <section class="game-cards">
+                <article class="card">
+                    <span class="price">$60</span>
+                    <span class="rate"><i class="fa-solid fa-star"></i>4.5</span>
+                    <div class="card-img">
+                        <img src="assets/img/game01.jpeg" alt="game photo" class="card-game-img">
+                    </div>
+                    <div class="card-caption">
+                        <span class="genre">Action</span>
+                        <p class="game-card-name">Call Of Duty</p>
+                    </div>
+                    <div class="card-btns">
+                        <a href="assets/games/memory_game/index.html" class="game-link">Play</a>
+                        <button class="play-btn game-btn">
+                            Add To Library
+                        </button>
+                    </div>
+                </article>
+            </section>
+        </section>
+        <section class="trending-games">
+            <section class="game-cards">
+                <!-- <article class="card">
+                    
+                </article> -->
+            </section>
+            
+        </section>
+
+
+        <section class="library">
+            
+        </section>
+        <section class="features-section">
+            <div class="features-header">
+                <h2 class="section-title">Why Choose Our Shop?</h2>
+                <i class="fa-solid fa-money-bill-1"></i>
+            </div>
+            <div class="features-layout">
+
+                <div class="IW-item">
+                    <div class="IW-icon-container">
+                        <i class="fas fa-tags"></i>
+                    </div>
+                    <h4>Best Prices</h4>
+                    <p>Guaranteed lowest prices with automatic price matching and beat-by-5% policy</p>
                 </div>
                 
                 <!-- 24/7 Support -->
-                <div class="col-lg-3 col-md-6">
-                    <div class="IW-item">
+                <div class="IW-item">
                         <div class="IW-icon-container">
                             <i class="fas fa-headset"></i>
                         </div>
                         <h4>24/7 Support</h4>
                         <p>Instant live support from gaming experts anytime, with 90% satisfaction rate</p>
-                    </div>
                 </div>
-                
+
                 <!-- Easy Refunds -->
-                <div class="col-lg-3 col-md-6">
-                    <div class="IW-item">
-                        <div class="IW-icon-container">
-                            <i class="fas fa-hand-holding-usd"></i>
-                        </div>
-                        <h4>Easy Refunds</h4>
-                        <p>1-click refunds processed in under 2 hours, no questions asked</p>
+                <div class="IW-item">
+                    <div class="IW-icon-container">
+                        <i class="fas fa-hand-holding-usd"></i>
                     </div>
+                    <h4>Easy Refunds</h4>
+                    <p>1-click refunds processed in under 2 hours, no questions asked</p>
                 </div>
-                
+
                 <!-- Complete Access -->
-                <div class="col-lg-3 col-md-6">
-                    <div class="IW-item">
-                        <div class="IW-icon-container">
-                            <i class="fas fa-gamepad"></i>
-                        </div>
-                        <h4>Complete Access</h4>
-                        <p>Unlimited access to 5000+ games including all new releases</p>
+                <div class="IW-item">
+                    <div class="IW-icon-container">
+                        <i class="fas fa-gamepad"></i>
                     </div>
+                    <h4>Complete Access</h4>
+                    <p>Unlimited access to 5000+ games including all new releases</p>
                 </div>
             </div>
-        </div>
-    </div>
+        </section>
+    </main>
 
+
+    <!-- Footer with icons below copyright -->
+    <footer class="site-footer">
+        <div class="footer-container">
+            <!-- Copyright Text -->
+            <!-- <p class="copyright">© 2025 Gaming Website. All rights reserved. | Built by gamers, for gamers - the ultimate showcase platform.</p>
+                -->
+            <!-- Social Links -->
+            <ul class="social-links">
+                <li class="social-item">
+                    <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">
+                        <i class="fab fa-facebook-f social-icon"></i>
+                    </a>
+                </li>
+                <li class="social-item">
+                    <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">
+                        <i class="fab fa-twitter social-icon"></i>
+                    </a>
+                </li>
+                <li class="social-item">
+                    <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
+                        <i class="fab fa-instagram social-icon"></i>
+                    </a>
+                </li>
+                <li class="social-item">
+                    <a href="/contact">
+                        <i class="fas fa-envelope social-icon"></i>
+                    </a>
+                </li>
+            </ul>
+            <!-- Copyright Text -->
+            <p class="copyright"><i class="fa-solid fa-copyright"></i> 2025 Gaming Website. All rights reserved. | Built by gamers, for gamers - the ultimate showcase platform.</p>
+        </div>
+    </footer>
     
     <script src=""></script>
+    <script src="assets/js/main.js"></script>
 </body>
 </html>
