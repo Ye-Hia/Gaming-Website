@@ -1,0 +1,31 @@
+@import url("general.css");
+:root {
+    --linked-in: #0077b5;
+    --facebook: #1877F2;
+    --youtube: #1877F2;
+    --sun: #ffa534;
+}
+/* Header Icons */
+.fa-gitkraken {
+    font-size: 2rem;
+    color: var(--primary-dark);
+}
+.fa-star {
+    color: var(--sun); 
+}
+.social-buttons .fa-google {
+    color: red;
+}
+.social-buttons .fa-facebook-f {
+    color: var(--facebook);
+}
+.fa-circle-xmark {
+    color: white;
+}
+/* IW Items Icons */
+.fa-tags, 
+.fa-headset, 
+.fa-hand-holding-usd, 
+.fa-gamepad {
+    color: var(--primary-dark);
+}
