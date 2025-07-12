@@ -1,0 +1,20 @@
+.controls {
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+}
+
+.controls span {
+    background: var(--primary-BG);
+    padding: 10px 15px;
+    border-radius: 25px;
+    font-weight: bold;
+    cursor: pointer;
+    color: var(--primary-light);
+    transition: .3s ease-in-out;
+}
+.controls span.active {
+    background: var(--hover-1);
+    color: var(--secondary-BG);
+}

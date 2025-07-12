@@ -84,7 +84,7 @@ input {
     height: var(--header-height);
     width: var(--content-width);
     /* background-color: var(--secondary-BG); */
-    background-color: var(--primary-BG);
+    /* background-color: var(--primary-BG); */
     position: relative;
     /* top: 20px; */
     z-index: var(--z--max);
@@ -98,7 +98,7 @@ input {
     align-items: center;
 }
 .header-title {
-    color: var(--primary-dark);
+    color: var(--primary-BG);
     font-size: 1.8rem;
     font-weight: 900;
     margin: 0 10px;
@@ -121,7 +121,7 @@ input {
 }
 .nav ul li a {
     position: relative;
-    color: var(--primary-dark);
+    color: var(--primary-BG);
 }
 .nav ul li a::after {
     content: "";
@@ -332,7 +332,7 @@ main {
     display: flex;
     flex-direction: column;
     padding: var(--padding-sm);
-    left: -100px;
+    /* left: -100px; */
 }
 .genre {
     margin-bottom: 5px;
@@ -414,7 +414,7 @@ main {
 
 .fa-gitkraken {
     font-size: 2rem;
-    color: var(--primary-dark);
+    color: var(--primary-BG);
 }
 .fa-star {
     color: var(--sun); 

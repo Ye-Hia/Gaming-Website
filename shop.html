@@ -5,12 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
             <!-- Main Styling File -->
         <link rel="stylesheet" href="assets/css/style.css">
-        <!-- Important To Use Font Awesome -->
-        <link rel="stylesheet" href="assets/css/all.min.css">
-        <!-- Help Rendering The Website On all Browsers -->
-        <link rel="stylesheet" href="assets/css/normalize.css">
-        <!-- Main Styling The Icons -->
-        <link rel="stylesheet" href="assets/css/icons.css">
+        <link rel="stylesheet" href="assets/css/shop.css">
 
         <!-- Google Fonts -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -22,9 +17,18 @@
     </head>
     <body>
         <div class="header-container"></div>
-        <main></main>
+        <main>
+            <div class="controls">
+                <span class="active" data-filter="all">Show All</span>
+                <span data-filter="action">Action</span>
+                <span data-filter="adventure">Adventure</span>
+                <span data-filter="racing">Racing</span>
+            </div>
+            <div class="game-cards-grid"></div>
+        </main>
         <footer class="site-footer"></footer>
         
         <script src="assets/js/main.js"></script>
+        <script src="assets/js/shop.js"></script>
     </body>
 </html>

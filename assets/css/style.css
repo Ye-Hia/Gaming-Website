@@ -41,6 +41,8 @@
 .main-banner .hero-brief .store-header {
     font-size: 2rem;
     font-weight: 800;
+    transform-origin: left center;
+    animation: hinge 3s ease-in-out infinite;
 }
 .main-banner .hero-brief .game-name {
     font-size: 3rem;
@@ -170,10 +172,11 @@
 /* ======================= Online Section ======================= */
 .game-cards-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, 350px);
+    grid-template-columns: repeat(auto-fit, 300px);
     justify-content: center;
     /* grid-template-columns: repeat(auto-fit, minmax( min(15rem, 100%) ,1fr)); */
     gap: 2rem;
+    margin-block: 65px;
 }
 .online-games-section .card {
     /* padding: var(); */

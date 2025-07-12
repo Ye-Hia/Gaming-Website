@@ -3,14 +3,9 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-            <!-- Main Styling File -->
+        <!-- Main Styling File -->
         <link rel="stylesheet" href="assets/css/style.css">
-        <!-- Important To Use Font Awesome -->
-        <link rel="stylesheet" href="assets/css/all.min.css">
-        <!-- Help Rendering The Website On all Browsers -->
-        <link rel="stylesheet" href="assets/css/normalize.css">
-        <!-- Main Styling The Icons -->
-        <link rel="stylesheet" href="assets/css/icons.css">
+        <link rel="stylesheet" href="assets/css/contact.css">
 
         <!-- Google Fonts -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -22,7 +17,33 @@
     </head>
     <body>
         <div class="header-container"></div>
-        <main></main>
+        <main>
+            <section class="contact-section">
+                <div class="contact-container">
+                <h2>Contact Us</h2>
+                <p>We'd love to hear from you. Fill out the form below and we'll get back to you shortly.</p>
+
+                <form action="#" method="post" class="contact-form">
+                    <div class="form-group">
+                    <label for="name">Your Name</label>
+                    <input type="text" id="name" name="name" required />
+                    </div>
+
+                    <div class="form-group">
+                    <label for="email">Your Email</label>
+                    <input type="email" id="email" name="email" required />
+                    </div>
+
+                    <div class="form-group">
+                    <label for="message">Your Message</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                    </div>
+
+                    <button type="submit" class="submit-btn">Send Message</button>
+                </form>
+                </div>
+            </section>
+        </main>
         <footer class="site-footer"></footer>
 
         <script src="assets/js/main.js"></script>
