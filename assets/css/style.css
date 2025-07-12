@@ -1,340 +1,16 @@
-@import url("general.css");
-/* Auth Modals */
-@import url("auth-modal.css");
-/* Responsive adjustments */
-@import url("online-section.css");
-@media (max-width: 768px) {
-    .social-links {
-        flex-wrap: wrap;
-    }
-}
-/* ============= Search Box ============= */
-.search-box {
-    height: 50px;
-    width: 60px;
-    border-radius: 120px;
-    display: inline-flex;
-    justify-content: space-evenly;
-    align-items: center;
-    background-color: #2f3640;
-    transition: 0.8s;
-}
-.search-input {
-    width: 0px;
-    /* height: 50px; */
-    border-radius: 100px;
-    border: 0px ;
-    background-color: transparent;
-    line-height: 40px;
-    transition: 0.8s;
-    color: var(--text-inverse);
-}
+@import url("global.css");
+/* 
+    Table of Contents 
+    Hero Section
+        - Perks Section
+    Online Games Section
+        - Buttons and Links
+        - Game Cards
+    Trending Games Section
+        - 3d Cards
+    Features Section
 
-.serach-btn {
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    transition: 0.8s;
-}
-.search-box:hover  {
-    width: 260px;
-}
-.search-box:hover .search-input {
-    width: 200px;
-    padding-left: var(--padding-md);
-}
-
-.search-box:hover .serach-btn {
-    background-color: #2f3640;
-}
-.search-box:hover .serach-btn i {
-    color: white;
-}
-/* ============= End of search box ============= */
-
-
-/* ====== Header ====== */
-.header-container {
-    background-color: var(--primary-dark);
-    /* background-color: var(--primary-BG); */
-    width: 100%;
-    position: fixed;
-    left: 0;
-    top: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 1000;
-}
-.header {
-    height: var(--header-height);
-    width: var(--content-width);
-    /* background-color: var(--secondary-BG); */
-    background-color: var(--primary-BG);
-    position: relative;
-    /* top: 20px; */
-    z-index: var(--z--max);
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-}
-/* ================= Logo ================= */
-.logo-container {
-    display: flex;
-    align-items: center;
-}
-.header-title {
-    color: var(--primary-dark);
-    font-size: 1.8rem;
-    font-weight: 900;
-    margin: 0 10px;
-    display: inline-block;
-}
-.logo-img-contianer {
-    /* margin: 0; */
-    display: inline-block;
-}
-/* ====== Navigation Bar ====== */
-.links {
-    display: flex;
-    align-items: center;
-}
-.nav ul li {
-    padding: calc(var(--maring-md) / 2) var(--padding-sm);
-    margin-right: calc(var(--maring-md) / 2);
-/*     border-radius: 10px;
-    transition: background-color var(--transition-xslow); */
-}
-.nav ul li a {
-    position: relative;
-    color: var(--primary-dark);
-}
-.nav ul li a::after {
-    content: "";
-    position: absolute;
-    height: 2px;
-    background-color: var(--primary-light);
-    left: 0;
-    bottom: 0;
-    width: 0%;
-    transition: var(--transition-slow);
-}
-/* .nav ul li:hover {
-    background-color: var(--primary-BG);
-} */
-.nav ul li:hover a::after {
-    width: 100%;
-
-}
-/* ======== Current page Active ========*/
-.nav ul li.current-page a::after {
-    width: 100% ;
-
-}
-/* ====== End Of Navigation Bar ====== */
-
-/* ====== Main Section ====== */
-main {
-    flex-grow: 1; /* This will make the main content take up all available space */
-    /* margin-top: calc(var(--header-height) * 1.3); */
-    margin-top: calc(var(--header-height));
-    /* margin-top: calc(var(--maring-md) * 4); */
-}
-/* -grad: red, blue; */
-/* ================= End ================= */
-
-/* ===== Buttons and Links ===== */
-.game-btn, .game-link {
-    padding: calc(var(--padding-sm) * 2);
-    height: 50px;
-    border-radius: 25px;
-    color: var(--text-inverse);
-    background-color: var(--hover-1);
-    border: none;
-    /* min-width: 100px; */
-    font-weight: 600;
-    transition: all var(--transition-medium);
-    cursor: pointer;
-}
-.game-btn:hover, .game-link:hover {
-    background-color: var(--secondary-dark);
-}
-.game-link {
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    min-width: 65px;
-}
-.login-btn, .sign-up-btn {
-    min-width: 100px;
-    background: none;
-    border: 3px solid var(--hover-dark);
-    padding: calc(var(--padding-sm) * 1.5);
-    border-radius: var(--radius-sm);    
-    cursor: pointer;
-    transition: all var(--transition-slow);
-    /* outline: inherit; */
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: var(--spacing-unit);
-}
-.login-btn {
-    color: var(--hover-dark);
-}
-.sign-up-btn {
-    color: var(--text-inverse);
-    background-color: var(--hover-dark);
-}
-.login-btn:hover {
-    color: var(--text-inverse);
-    background-color: var(--hover-dark);
-    box-shadow: var(--shadow-btn-30);
-}
-.sign-up-btn:hover {
-    box-shadow: var(--shadow-btn-30);
-}
-/* ===== End Of Btns ===== */
-/* ===== Cards ===== */
-.game-cards-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, 350px);
-    /* grid-template-columns: repeat(auto-fit, minmax( min(15rem, 100%) ,1fr)); */
-    gap: 2rem;
-}
-.card {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-    /* padding: var(); */
-    /* width: 350px; */
-    height: 500px;
-    background-color: var(--primary-BG);
-    transition: transform var(--transition-xslow);
-    border-radius: 15px;
-}
-.card:hover {
-    transform: scale(1.05);
-}
-.card-img {
-    width: 100%;
-    display: flex;
-    border-radius: 15px 15px 0 0;
-    /* border: 3px solid red; */
-    overflow: hidden;
-}
-.game-img {
-    max-width: 100%;
-    opacity: 0.95;
-    z-index: 4;
-    transition: transform var(--transition-slow), opacity var(--transition-xslow);
-}
-.card:hover .game-img {
-    /* transform: scale(1.05); */
-    opacity: 1;
-}
-.card-img:hover .game-img {
-    transform: scale(1.05);
-}
-.card > span {
-    position: absolute;
-    top: 20px;
-    padding: var(--padding-sm);
-    border-radius: 10px;
-    z-index: 10;
-    color: var(--text-inverse);
-    /* background-color: var(--primary-BG); */
-}
-.price {
-    right: 20px;  
-}
-.rate {
-    left: 20px;
-}
-.card-caption p {
-    margin: 0;
-}
-.card-caption  {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    padding: var(--padding-sm);
-    left: -100px;
-
-}
-.genre {
-    margin-bottom: 5px;
-    color: #2f3640;
-}
-.game-card-name {
-    font-weight: 700;
-    font-size: 1.2rem;
-    color: #1e1e1e;
-}
-.card-btns {
-    width: 100%;
-    display: flex;
-    justify-content: space-around;
-    margin-bottom: var(--maring-md);
-}
-
-/* ===== FOOTER STYLES ===== */
-.site-footer {
-    background-color: var(--primary-dark);
-    /* color: var(--text-inverse); */
-    padding: 2rem 0;
-    border-top: 1px solid #333;
-    margin-top: auto; /* Makes it stick to bottom */
-}
-
-.footer-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 20px;
-    gap: 1.5rem;
-}
-
-.copyright {
-    font-size: 1rem;
-    color: var(--text-inverse);
-    margin: 0;
-    text-align: center;
-}
-
-.social-links {
-    display: flex;
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    gap: 1.5rem;
-    justify-content: center;
-}
-
-.social-item a {
-    display: flex;
-    align-items: center;
-    color: var(--text-inverse);
-    text-decoration: none;
-    transition: all 0.3s ease;
-    gap: 0.5rem;
-}
-
-.social-item a:hover {
-    color: var(--primary-BG);
-    transform: translateY(-2px);
-}
-
-.social-icon {
-    font-size: 1.2rem;
-    width: 20px;
-    text-align: center;
-}
-
+*/
 /* =========================== Hero Section =========================== */
 .hero-container {
     width: 100%;
@@ -375,6 +51,9 @@ main {
     font-weight: 600;
     font-family: var(--nunito);
 }
+/* .hero-brief .demo-btn {
+    Done IN global
+} */
 /* ============== Right Col ============== */
 .banner-card-layout {
     position: relative;
@@ -399,7 +78,7 @@ main {
 .img-banner:hover #banner-img {
     transform: scale(1.2);
 }
-/* Images */
+/* Banner Image */
 #banner-img {
     max-width: 100%;
     transition: calc(var(--transition-xslow) * 2.5);
@@ -441,6 +120,7 @@ main {
     gap: 1rem;
 }
 .perk {
+    margin-top: var(--header-height);
     display: grid;
     grid-template: 'icon' 'title' / auto;   
     justify-items: center;
@@ -448,9 +128,13 @@ main {
     background-image: linear-gradient(to bottom left, #e0e4e5, #f2f6f9);
     padding: calc(var(--padding-md) * 1.5);
     box-shadow: 
-    inset -2px 2px hsl(0 0 100% / 1),
-    -20px 20px 40px hsl(0 0 0 / .25) ;
+    inset -2px 2px hsl(0 0 100% / 1),rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
     color: var(--primary-dark);
+    transition: all var(--transition-slow);
+}
+.perk:hover {
+    transform: scale(1.05) translateY(-15px) rotate(1deg);
+    /* background-image: linear-gradient(to bottom, #e0e4e5, white); */
 }
 .perk .icon {
     width: 60px;
@@ -484,19 +168,170 @@ main {
     color: var(--text-inverse);
 } */
 /* ======================= Online Section ======================= */
+.game-cards-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 350px);
+    justify-content: center;
+    /* grid-template-columns: repeat(auto-fit, minmax( min(15rem, 100%) ,1fr)); */
+    gap: 2rem;
+}
+.online-games-section .card {
+    /* padding: var(); */
+    /* width: 350px; */
+    height: 500px;
+}
+/* ============= Main Styles of Section is in global.css ============= */
+/* ============= Trending Games Section ============= */
+.trending-games-cards {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+/* ============= 3D Cards ============= */
+.container-3d::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    /* background: linear-gradient(to top, rgba(0,0,0,0.8), transparent); */
+    /* z-index: 1; */
+    transition: all 0.8s;
+}
+.card-3d {
+    position: relative;
+    width: 300px;
+    display: flex;
+    justify-content: center;
+    
+    perspective: 800px;
+    perspective-origin: center center;
+}
 
+.img-wrapper-3d {
+    position: relative;
+    width: 300px;
+    height: 450px;
+    border-radius: 20px;
+    overflow: hidden;
+    transform-style: preserve-3d;
+    transition: 0.8s;
+    
+}
+.img-wrapper-3d::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to top, rgba(0,0,0,0.8), transparent);
+    z-index: 100;
+    transition: all 0.8s;
+    /* background: red; */
+    opacity: 0.3;
+}
+.img-wrapper-3d  .static-img {
+    max-width: 100%;
+    object-fit: cover;
+}
+.motion-img {
+    width: 250px;
+    opacity: 0;
+    max-width: 100%;
+    position: absolute;
+    left: calc(-(100% - 250%)/2);
+    bottom: 0;
+    transition: 0.8s;
+}
+.card-3d:hover .img-wrapper-3d {
+    transform: rotateX(20deg);
+    box-shadow: 0 15px 10px rgba(0, 0, 0, 0.63);
+}
+.card-3d:hover .img-wrapper-3d::after {
+    opacity: 1;
+}
+.card-3d:hover .motion-img {
+    opacity: 1;
+    transform: translate3d(0, -20px, 50px);
 
-@keyframes banner-loading {
-    0% {
-        visibility: hidden; 
-        opacity: 0;
-        transform: translateY(100px);
-    }
-    25% {
-        visibility: visible; 
-    }
-    100% {
-        opacity: 1;
-        transform: translateY(0);
-    }
+}
+.card-3d:hover .title {
+    transform: translate3d(0, -20px, 50px);
+
+}
+.card-3d .title {
+    position: absolute;
+    bottom: 30px;
+    color: white;
+    z-index: 10;
+    transition: 0.8s;
+}
+.card-3d:hover #horror-3d {
+    /* transform: translate3d(0, -180px, 50px); */
+}
+
+/* ===================== Features Section ===================== */
+.features-layout {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax( min(15rem, 100%) ,1fr));
+    gap: 1rem;
+    /* margin-bottom: var(--header-height); */
+}
+.IW-item {
+    --primary-300: #93b1d0;
+    --primary-400: #7c9fc5;
+    display: grid;
+    grid-template: 'icon title' 'brief brief' / auto 1fr;
+    align-items: center;
+    gap: 1rem;
+    background-color: var(--primary-400);
+    padding: calc(var(--padding-md) * 1.5);
+    border-radius: 1rem;
+    box-shadow: var(--shadow-btn-30);
+
+    transition: transform var(--transition-slow);
+}
+.IW-item * {
+    color: var(--text-inverse);
+}
+.IW-item:hover {
+    background-color: transparent;
+    background-image: linear-gradient(to bottom, #6366f1, #a855f7);
+    transform: scale(1.05) translateY(-15px) /* rotate(1deg) */;
+}
+.IW-item:hover .IW-icon-container {
+    background-color: transparent;
+    background-image: linear-gradient(to bottom, #7f83f3, #b56af9); 
+}
+.IW-item:hover .IW-icon-container i {
+    color: white;
+}
+.IW-icon-container {
+    grid-area: icon;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: var(--primary-300);
+}
+.iw-title {
+    grid-area: title;
+    margin: 0;
+    text-align: right;
+    font-size: 1.3rem;
+    font-weight: 700;
+    font-family: var(--nunito);
+}
+.iw-brief {
+    grid-area: brief;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-size: 1.1rem;
+    font-weight: 500;
+    font-family: var(--josefin);
 }
